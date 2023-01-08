@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sae.controller.NewArticleController">
+   <children>
+      <TextField fx:id="designationArticle" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Désignation de l'article" />
+      <TextField fx:id="prixArticle" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Prix de l'article" />
+      <TextField fx:id="quantiteArticle" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Quantite d'article" />
+      <TextField fx:id="referenceArticle" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="518.0" promptText="Reference de l'article" />
+      <ComboBox fx:id="categorieArticle" prefWidth="150.0" promptText="Article Categorie" />
+      <TextField fx:id="capaciteArticle" alignment="CENTER" promptText="Capacite (Categorie 1)" />
+      <TextField fx:id="poidArticle" alignment="CENTER" promptText="Poid (Categorie 2)" />
+      <HBox alignment="CENTER" prefHeight="3.0" prefWidth="518.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#validerAjout" text="Valider">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#annulerAjout" text="Annuler">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

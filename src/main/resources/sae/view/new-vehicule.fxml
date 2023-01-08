@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sae.controller.NewVehiculeController">
+   <children>
+      <TextField fx:id="numeroImmatricualtionVehicule" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="numero d'immatriculation" />
+      <TextField fx:id="modeleVehicule" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="modèle vehicule" />
+      <TextField fx:id="marqueVehicule" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="marque vehicule" />
+      <TextField fx:id="kilometrageVehicule" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="kilometrage vehicule" />
+      <TextField fx:id="anneeMiseCirculation" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="année de mise en circulation" />
+      <ComboBox fx:id="typeVehicule" prefWidth="150.0" promptText="Type vehicule" />
+      <TextField fx:id="chargeMaxKilogramme" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="charge maximal en kilogramme (fourgon)" />
+      <TextField fx:id="chargeMaxMetreCube" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="charge maximal en metre cube (fourgon)" />
+      <HBox alignment="CENTER">
+         <children>
+            <ComboBox fx:id="listeLivreurs" prefWidth="150.0" promptText="Liste Livreurs">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="listeCommerciaux" prefWidth="150.0" promptText="Liste Commerciaux">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="23.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#validerAjout" text="Valider" />
+            <Button mnemonicParsing="false" onAction="#annulerAjout" text="Annuler" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
